@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-markdownify
-  version: "0.9.5"
+  version: "0.9.6"
   python_min: '3.10'
 
 package:
@@ -12,10 +12,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_markdownify-${{ version }}.tar.gz
-  sha256: 34c34eba4a797282a5c5bd97b13cec84d6a4c0673ad47ce1c1d000d74dd8d4ab
+  sha256: edcf47b2026d55a8439049d35c8b54e11066a4856c4fad1060e139cb3d2eee52
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
