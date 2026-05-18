@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-markdownify
-  version: "0.9.6"
+  version: 0.9.7
   python_min: '3.10'
 
 package:
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_markdownify-${{ version }}.tar.gz
-  sha256: edcf47b2026d55a8439049d35c8b54e11066a4856c4fad1060e139cb3d2eee52
+  sha256: 2e59dfd445ad6362288f7bc1574e45d8356848463e261b878fd70df6a272c47f
 
 build:
   number: 0
@@ -28,8 +28,7 @@ requirements:
     - python >=${{ python_min }},<4.0
     - django
     - markdown
-    - bleach >=5.0.0
-
+    - bleach >=6.0.0
 tests:
   - python:
       imports:
